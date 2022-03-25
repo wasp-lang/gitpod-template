@@ -1,9 +1,9 @@
 # Learn more about this file at https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
   - before: |
-      curl -sSL https://get.wasp-lang.dev/installer.sh | sh
       echo "export PATH=$PATH:/home/gitpod/.local/bin" >> ~/.bashrc
       . ~/.bashrc
+      curl -sSL https://get.wasp-lang.dev/installer.sh | sh
     command: |
       cd MyNewApp
       wasp start
