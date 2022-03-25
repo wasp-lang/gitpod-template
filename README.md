@@ -1,8 +1,3 @@
-_**🔴 TODO: When you create a new framework template, please:**_
-* process all TODO comments and afterwards delete them from this file
-* adjust all other values of the new template repo to match what is configured here, e.g. "About", topics, mark it as a GitHub template, set the URL to www.gitpod.io.
-* match what you see in [other templates](https://github.com/gitpod-io/?q=template-) if in doubt
-
 # A Wasp template on Gitpod
 
 This is a [Wasp](https://wasp-lang.dev/) template configured for ephemeral developer environments on [Gitpod](https://www.gitpod.io/).
