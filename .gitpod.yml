@@ -1,0 +1,16 @@
+# Learn more about this file at https://www.gitpod.io/docs/references/gitpod-yml
+tasks:
+  - before: |
+      curl -sSL https://get.wasp-lang.dev/installer.sh | sh
+      echo "export PATH=$PATH:/home/gitpod/.local/bin" >> ~/.bashrc
+    command: |
+      cd MyNewApp
+      wasp start
+
+ports:
+  - port: 3000
+    description: Web app
+    onOpen: open-browser
+  - port: 3001
+    description: Node.js server
+    onOpen: ignore
