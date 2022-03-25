@@ -3,6 +3,7 @@ tasks:
   - before: |
       curl -sSL https://get.wasp-lang.dev/installer.sh | sh
       echo "export PATH=$PATH:/home/gitpod/.local/bin" >> ~/.bashrc
+      . ~/.bashrc
     command: |
       cd MyNewApp
       wasp start
