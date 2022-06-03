@@ -4,7 +4,10 @@ tasks:
       echo "export PATH=$PATH:/home/gitpod/.local/bin" >> ~/.bashrc
       . ~/.bashrc
       curl -sSL https://get.wasp-lang.dev/installer.sh | sh
+    env:
+      WASP_TELEMETRY_CONTEXT: gitpod
     command: |
+      export WASP_TELEMETRY_USER_ID=$GITPOD_WORKSPACE_ID
       cd MyNewApp
       wasp start
 
