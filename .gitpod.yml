@@ -4,7 +4,10 @@ image:
 # Learn more about this file at https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
   - command: |
+      echo "REACT_APP_API_URL=$(printenv | grep "^GITPOD_WORKSPACE_URL=" | cut -d "=" -f 2 | awk '{gsub("https://","https://3001-")} 1')" >> MyNewApp/.env.client
+      echo "WASP_WEB_CLIENT_URL=$(printenv | grep "^GITPOD_WORKSPACE_URL=" | cut -d "=" -f 2 | awk '{gsub("https://","https://3000-")} 1')" >> MyNewApp/.env.server
       cd MyNewApp
+      wasp db migrate-dev
       wasp start
 
 ports:
