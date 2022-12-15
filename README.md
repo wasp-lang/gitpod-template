@@ -12,7 +12,6 @@ Inside this template is a simple ToDo app complete with Authentication, Database
 
 Visit [wasp-lang.dev](https://www.wasp-lang.dev) for more info.
 
-
 ## Next Steps
 
 Click the button below to start a new development environment:

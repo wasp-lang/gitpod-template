@@ -2,6 +2,8 @@ image:
   file: .gitpod.Dockerfile
 
 # Learn more about this file at https://www.gitpod.io/docs/references/gitpod-yml
+# We grab the dynamically created GITPOD_WORKSPACE_URL, add ports 3000/1, and create 
+# the .env files necessary for Wasp Routing and CORS 
 tasks:
   - command: |
       echo "REACT_APP_API_URL=$(printenv | grep "^GITPOD_WORKSPACE_URL=" | cut -d "=" -f 2 | awk '{gsub("https://","https://3001-")} 1')" >> MyNewApp/.env.client
