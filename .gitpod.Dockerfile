@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -yq \
     sudo \
     curl
 
-# Create the gitpod user. UID must be 33333 as required by Gitpod.
+# Gitpod expects us to have gitpod user with UID 333333, so let's create one.
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
 
 USER gitpod
