@@ -13,7 +13,7 @@ USER gitpod
 ENV NODE_VERSION=18.12.0
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ENV NVM_DIR=/home/gitpod/.nvm
-RUN "$NVM_DIR/nvm.sh" && nvm install ${NODE_VERSION} \
+RUN . "$NVM_DIR/nvm.sh" && nvm install ${NODE_VERSION} \
 		&& nvm use v${NODE_VERSION} \
 		&& nvm alias default v${NODE_VERSION}	
 ENV PATH="/home/gitpod/.nvm/versions/node/v${NODE_VERSION}/bin:${PATH}"
