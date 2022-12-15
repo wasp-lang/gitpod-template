@@ -17,7 +17,7 @@ Visit [wasp-lang.dev](https://www.wasp-lang.dev) for more info.
 
 Click the button below to start a new development environment:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-wasp)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/wasp-lang/gitpod-template)
 
 ## Get Started With Your Own Project
 
