@@ -1,3 +1,5 @@
+import HttpError from '@wasp/core/HttpError.js';
+
 export const createTask = async ({ description }, context) => {
   if (!context.user) {
     throw new HttpError(401);
