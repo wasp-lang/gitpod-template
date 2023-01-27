@@ -23,5 +23,8 @@ ENV PATH="/home/gitpod/.nvm/versions/node/v${NODE_VERSION}/bin:${PATH}"
 # Wasp gets installed in $HOME/.local/bin, so we need to add it to PATH.
 ENV PATH="/home/gitpod/.local/bin:${PATH}"
 # Ensure Wasp's telemetry recognizes Wasp is running on Gitpod.
-RUN printf 'export WASP_TELEMETRY_CONTEXT=gitpod\n' >> $HOME/.bashrc \
-    && printf 'export WASP_TELEMETRY_USER_ID="%s"\n' "$GITPOD_WORKSPACE_ID" >> $HOME/.bashrc
+ENV WASP_TELEMETRY_CONTEXT=gitpod
+ENV WASP_TELEMETRY_DISABLE=1
+
+# GITPOD_WORKSPACE_ID is not available in the context of docker, so we don't try to expand it here.
+RUN printf 'export WASP_TELEMETRY_USER_ID="${GITPOD_WORKSPACE_ID}"' >> $HOME/.bashrc
