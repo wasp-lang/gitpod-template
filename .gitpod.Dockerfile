@@ -4,8 +4,7 @@ RUN apt-get update && apt-get install -yq \
     git \
     git-lfs \
     sudo \
-    curl \
-    npm
+    curl 
 
 # Gitpod expects us to have gitpod user with UID 333333, so let's create one.
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
@@ -26,8 +25,3 @@ RUN printf 'export PATH="%s:$PATH"\n' "$HOME/.local/bin" >> $HOME/.bashrc
 # Ensure Wasp's telemetry recognizes Wasp is running on Gitpod.
 RUN printf 'export WASP_TELEMETRY_CONTEXT=gitpod\n' >> $HOME/.bashrc \
     && printf 'export WASP_TELEMETRY_USER_ID="%s"\n' "$GITPOD_WORKSPACE_ID" >> $HOME/.bashrc
-    
-#install vsce
-RUN npm install -g @vscode/vsce
-#install wasp-lang.wasp extension
-RUN vsce install wasp-lang.wasp
