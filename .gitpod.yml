@@ -24,3 +24,4 @@ ports:
 vscode:
   extensions:
     - wasp-lang.wasp
+    - prisma.prisma
