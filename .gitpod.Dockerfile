@@ -28,6 +28,6 @@ RUN printf 'export WASP_TELEMETRY_CONTEXT=gitpod\n' >> $HOME/.bashrc \
     && printf 'export WASP_TELEMETRY_USER_ID="%s"\n' "$GITPOD_WORKSPACE_ID" >> $HOME/.bashrc
     
 #install vsce
-RUN npm install -g vsce
+RUN npm install -g @vscode/vsce
 #install wasp-lang.wasp extension
 RUN vsce install wasp-lang.wasp
