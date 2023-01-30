@@ -20,3 +20,8 @@ ports:
     visibility: public
     description: Node.js server
     onOpen: ignore
+
+vscode:
+  extensions:
+    - wasp-lang.wasp
+    - prisma.prisma
