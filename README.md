@@ -1,5 +1,7 @@
 # A Wasp template on Gitpod
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/wasp-lang/gitpod-template)
+
 <img src="./MyNewApp/src/client/waspLogo.png" width='100px'/>
 
 This is a [Wasp](https://wasp-lang.dev/) template configured for ephemeral developer environments on [Gitpod](https://www.gitpod.io/).
@@ -14,9 +16,11 @@ Visit [wasp-lang.dev](https://www.wasp-lang.dev) for more info.
 
 ## Next Steps
 
-Click the button below to start a new development environment:
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/wasp-lang/gitpod-template)
+After clicking the button above, you'll be taken to a new workspace. 
+- Login with GitHub
+- Wait for the Docker image to build
+- Wait for the Wasp CLI to install and start the development environment
+- A preview of your app will open in a new tab within the IDE
 
 ## Get Started With Your Own Project
 
