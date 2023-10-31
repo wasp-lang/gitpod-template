@@ -1,13 +1,12 @@
 app MyNewApp {
 
   wasp: {
-    version: "^0.8.0"
+    version: "^0.11.7"
   },
 
   title: "MyNewApp",
 
   auth: {
-    // Expects entity User to have (username:String) and (password:String) fields.
     userEntity: User,
     methods: {
       // we also support Google OAuth2, with GitHub and more coming soon!
