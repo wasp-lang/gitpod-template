@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SignupForm from '@wasp/auth/forms/Signup';
+import { SignupForm } from "@wasp/auth/forms/Signup";
 
 const SignupPage = () => {
   return (
