@@ -1,6 +1,6 @@
 import './Main.css';
 import React from 'react';
-import logout from '@wasp/auth/Logout';
+import logout from '@wasp/auth/logout';
 import useAuth from '@wasp/auth/useAuth';
 import { useQuery } from '@wasp/queries'; // Wasp uses a thin wrapper around react-query
 import getTasks from '@wasp/queries/getTasks';
